@@ -1,0 +1,56 @@
+.nav {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    height: 50vh;
+    padding-bottom: 50px;
+    background: rgb(116, 172, 223);
+    background: linear-gradient(242deg, rgba(116, 172, 223, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: white;
+
+
+
+}
+
+.logo {
+    padding-bottom: 50px;
+}
+
+.crear {
+    position: absolute;
+    bottom: 11cm;
+    background-color: rgb(0, 0, 0);
+}
+
+.tuje {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.btn {
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-size: 17px;
+    background: #f7eac3;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #f2f2b1;
+    background-image: -webkit-linear-gradient(top, #f2f2b1, #f3ff99);
+    background-image: -moz-linear-gradient(top, #f2f2b1, #f3ff99);
+    background-image: -ms-linear-gradient(top, #f2f2b1, #f3ff99);
+    background-image: -o-linear-gradient(top, #f2f2b1, #f3ff99);
+    background-image: linear-gradient(to bottom, #f2f2b1, #f3ff99);
+    text-decoration: none;
+    cursor: pointer;
+}

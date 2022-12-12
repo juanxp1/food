@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 30px;
+    min-width: 30vh;
+    min-height: 30vh;
+    max-width: 40vh;
+    max-height: 52vh;
+    padding-bottom: 10px;
+    height: 60vh;
+
+
+}
+
+
+.tarjeta {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 52vh;
+    width: 40vh;
+    box-shadow: 0px 0px 30px 2px rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 20px;
+    background: rgb(252, 254, 255);
+    background: linear-gradient(0deg, rgb(180, 215, 248) 0%, rgba(255, 255, 255, 1) 100%);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+
+
+
+}
+
+.img {
+    border-radius: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    align-items: center;
+    bottom: 0px;
+    height: 220px;
+    opacity: 0.9;
+    max-height: 220px;
+    min-height: auto;
+
+
+}
+
+.tarjeta:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: all 0.3s;
+}
+
+.title {
+    font-size: 21px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.heal {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.diets {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    color:  #000000;
+    font-weight: 300;
+    text-transform: capitalize;
+
+
+}

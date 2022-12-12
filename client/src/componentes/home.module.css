@@ -1,0 +1,52 @@
+
+
+.otrodiv {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(116, 172, 223);
+    background: linear-gradient(0deg, rgba(116, 172, 223, 1) 0%, rgba(255, 255, 255, 1) 110%);
+
+
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.filtro {
+
+    display: flex;
+    flex-direction: row;
+    height: 29px;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 20px;
+    background: rgb(255, 255, 255);
+    
+    
+}
+
+.select {
+    background: #f7eac3;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: groove;
+    
+}
+
+.card{
+text-decoration: none;
+
+}
