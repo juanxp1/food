@@ -27,9 +27,9 @@ function Home() {
   const [recipesPerPage, setrecipesPerPage] = useState(9)
   const indexLastRecipe = currentPage * recipesPerPage
   const indexFirstRecipe = indexLastRecipe - recipesPerPage
-  const currentRecipes = receta.length ? receta.slice(indexFirstRecipe, indexLastRecipe) :[]
+  const currentRecipes = receta.length ? receta.slice(indexFirstRecipe, indexLastRecipe) : []
 
- 
+
 
 
 
@@ -44,7 +44,7 @@ function Home() {
   {/*Filtrados*/ }
 
   function handleFilterTypeDiet(e) {
-   // console.log("target", e.target.value)
+    // console.log("target", e.target.value)
     dispatch(filtroRecetasPorDiet(e.target.value))
     setCurrentPage(1)
   }
@@ -65,10 +65,10 @@ function Home() {
 
 
 
-  
+
   return (
 
-  
+
 
     <div className={style.home}>
 
@@ -118,7 +118,6 @@ function Home() {
 
       <div className={style.otrodiv}>
         {currentRecipes?.map((receta, index) =>
-        
 
           <Link className={style.card} to={`/recetas/${receta.id}`} >
 
@@ -132,7 +131,7 @@ function Home() {
 
               healthScore={receta.healthScore}
 
-              diets={receta.diets?.map(r=>r.name)}
+              diets={receta.diets?.map(r => r.name)}
 
 
             /> </Link>)}
@@ -144,7 +143,7 @@ function Home() {
 
 
     </div >
-    
+
 
 
   );

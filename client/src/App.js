@@ -10,25 +10,16 @@ import Crear from './componentes/Crear'
 
 
 
-
-
-
-
 function App() {
   return (
     //react fragment --> <> </>
     <>
       <BrowserRouter>
-
-
-
         <Route path="/recetas/:id" component={Detalles} />
         <Route path="/home" component={Nav} />
         <Route exact path="/" component={Landing} />
         <Route path="/home" component={Home} />
         <Route path="/create" component={Crear} />
-
-
       </BrowserRouter>
 
 

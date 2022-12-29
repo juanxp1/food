@@ -10,7 +10,7 @@ import { buscarRecetas } from '../redux/action/index'
 
 export default function Search() {
   const dispatch = useDispatch();
-  const [receta, setReceta] = useState("");
+  const [receta, setReceta] = useState('');
 
   return (
     <form className={style.container}
