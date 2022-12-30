@@ -20,7 +20,7 @@ export const RESET_DETALLES = "RESET_DETALLES"
 ///Mostrar todas las recetas ////
 export const getAllRecetas = () => {
     return async function (dispatch) {
-        await axios.get('https://food-production-7e38.up.railway.app/recetas')
+        await axios.get('https://food-production-d73f.up.railway.app/recetas')
             .then((response) =>
                 dispatch({ type: GET_ALL_RECETAS, payload: response.data })
 
@@ -35,7 +35,7 @@ export const getAllRecetas = () => {
 export const getRecetasDetail = (id) => {
 
     return async (dispatch) => {
-        await axios.get(`https://food-production-7e38.up.railway.app/recetas/${id}`)
+        await axios.get(`https://food-production-d73f.up.railway.app/${id}`)
             .then((response) =>
                 dispatch({ type: GET_RECETAS_DETAILS, payload: response.data })
             )
@@ -49,7 +49,7 @@ export const getRecetasDetail = (id) => {
 export const createRecetas = (NewReceta) => {
     return async (dispatch) => {
         await axios
-            .post(`https://food-production-7e38.up.railway.app/recetas/`, NewReceta)
+            .post(`https://food-production-d73f.up.railway.app/recetas/`, NewReceta)
             .then((response) =>
                 dispatch({ type: CREATE_RECETAS, payload: response.data })
             );
@@ -62,7 +62,7 @@ export const createRecetas = (NewReceta) => {
 /////buscr por Query////
 export const buscarRecetas = (name) => {
     return async function (dispatch) {
-        const loQue = await fetch(`https://food-production-7e38.up.railway.app/recetas?name=${name}`)
+        const loQue = await fetch(`https://food-production-d73f.up.railway.app/recetas?name=${name}`)
         const response = await loQue.json()
         dispatch({ type: BUSCAR_RECETA, payload: response })
     };
