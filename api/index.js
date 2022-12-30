@@ -19,15 +19,18 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn, Diet } = require('./src/db.js');
+require('dotenv').config();
+const { PORT } = process.env;
+
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(3009, () => {
-    console.log('%s listening at 3009'); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log('%s listening at ' + PORT); // eslint-disable-line no-console
 
     // const dietas = ["gluten free","paleolithic", "vegetarian", "lacto ovo vegetarian","vegan","pescatarian","primal","whole 30", "fodmap friendly","dairyFree"];
     //      dietas.forEach(async (element) => await Diet.create({name: element}));
-      
+
     // console.log('Tipos de dieta pre-cargadas')
 
   });
