@@ -95,7 +95,7 @@ export function ordenPorPuntuation(payload) {
 export function getTipoDiets() {
 
     return async function (dispatch) {
-        await axios.get(`https://food-production-7e38.up.railway.app/dietas`)
+        await axios.get(`https://food-production-d73f.up.railway.app/dietas`)
             .then((response) =>
                 dispatch({ type: GET_TIPO_DIETS, payload: response.data })
             )
